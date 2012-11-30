@@ -1,0 +1,132 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-2008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+%\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[green]{casual}                % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+
+%\usepackage[hyperfootnotes=false]{hyperref}
+% character encoding
+\usepackage{ucs}
+\usepackage{tabularx}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,romanian]{babel}
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{
+	\recomputelengths 
+
+	}
+
+%http://tex.stackexchange.com/questions/68334/why-tabular-doesnt-work-with-moderncv
+\setlength\arrayrulewidth{.4pt}
+\setlength\tabcolsep{6pt}
+
+\newcounter{rownum}
+\setcounter{rownum}{0}
+
+% personal data
+\firstname{Alexandru \mbox{George}}
+
+\familyname{\mbox{Burghelea}}
+
+\title{Transcript}               % optional, remove the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{First Year 2009 - 2010}
+\begin{center}
+    \begin{tabular*}{0.55\textwidth}{@{\extracolsep{\fill}} | l | l | r | }
+    \hline
+    \multicolumn{3}{|c|}{\textbf{First Semester}}\\
+    \hline
+    \setcounter{rownum}{1}\arabic{rownum}.   & Mathematics 1 & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Mathematics 2 & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Computer Programming & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Introduction to Operating Systems & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Physics & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Graphics for Engineering & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & English 1 & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & History of Philosophy & 10 \\ \hline
+    
+    \multicolumn{3}{|c|}{\textbf{Second Semester}}\\ \hline
+    \setcounter{rownum}{1}\arabic{rownum}.   & Mathematics 3 & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Data Structures & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Basic Electrotechnics & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Numerical Methods & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Logical Design & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Information Theory & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & English 2 & 10 \\ \hline
+    \multicolumn{2}{|r|}{\textbf{Year Average}}  & 9.33 \\ \hline
+
+    \hline
+    \end{tabular*}
+    
+\section{Second Year 2010 - 2011}    
+    \begin{tabular*}{0.55\textwidth}{@{\extracolsep{\fill}} | l | l | r | }
+    
+    \hline
+    \multicolumn{3}{|c|}{\textbf{First Semester}}\\
+    \hline
+    \setcounter{rownum}{1}\arabic{rownum}.   & Algorithm Analysis & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Object Oriented Programming & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Introduction to Assembly Language & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Elements of Analogical Electronics & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Theory of Automated System & 7 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Technical Culture Philosophy & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & English 3 & 10 \\ \hline
+    
+    \multicolumn{3}{|c|}{\textbf{Second Semester}}\\ \hline
+    \setcounter{rownum}{1}\arabic{rownum}.   & Algorithm Design & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Programming Paradigms & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Communication Protocols & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Numerical Calculators 1 & 7 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Digital Electronics & 7 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Data Acquisition & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & English 4 & 10  \\ \hline
+    \multicolumn{2}{|r|}{\textbf{Year Average}}  & 8.85 \\ \hline
+    \end{tabular*}
+
+\section{Third Year 2011 - 2012}    
+    \begin{tabular*}{0.55\textwidth}{@{\extracolsep{\fill}} | l | l | r | }
+    
+    \hline
+    \multicolumn{3}{|c|}{\textbf{First Semester}}\\
+    \hline
+    \setcounter{rownum}{1}\arabic{rownum}.   & Parallel and Distributed Algorithms & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Formal and Automated Languages  & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Local Area Networks & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Numerical Calculators II & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Computer Graphics Elements & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & General Economics & 7 \\ \hline
+    
+    \multicolumn{3}{|c|}{\textbf{Second Semester}}\\ \hline
+    \setcounter{rownum}{1}\arabic{rownum}.   & Designing with Microprocessors & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Computer Systems Architecture & 8 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Operating Systems & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Databases I & 10 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Software Engineering & 9 \\ \hline
+    \addtocounter{rownum}{1}\arabic{rownum}. & Strategic Marketing & 9 \\ \hline
+    \multicolumn{2}{|r|}{\textbf{Year Average}}  & 8.83 \\ \hline
+    \end{tabular*}
+    
+\section{Fourth Year 2012 - 2013}    
+\textbf{TBA}
+\end{center}
+
+\end{document}
+
