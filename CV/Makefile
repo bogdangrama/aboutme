@@ -7,8 +7,9 @@ CLEAN_FILES = *.aux *.log *.out *.synctex.gz
 
 .PHONY: clean all
 
-all: $(PDF_EN) $(PDF_RO)
-
+all: en ro
+en: $(PDF_EN) 
+ro: $(PDF_RO)
 $(PDF_EN) $(PDF_RO): %.pdf: %.tex
 	$(PDFLATEX) $<
 	$(PDFLATEX) $<	# Twice, so TOC is also updated
